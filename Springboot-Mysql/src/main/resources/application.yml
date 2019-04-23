@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: DB-Service
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://xxxxx:3306/telephonedir?useSSL=false
+    username: xxxxx
+    password: xxxxx
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: update
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+server:
+  port: 8080
+  error.whitelabel.enabled: false 
+  contextPath: /SpringBootRestApi
